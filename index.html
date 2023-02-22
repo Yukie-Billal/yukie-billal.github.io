@@ -3,14 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Documentasi -- PKL</title>
+	<title>Documentasi -- PKL [Sementara Aja]</title>	
 </head>
 <body>
-	Selamat Datang, Belum Ada Apa Apa, Tapi Nanti Pasti Ada
+	<p class="header-m">Disini Tempatnya Berbagi Cerita [Kayanya] Tentang Siapa ?</p>	
+	<a href="https://github.com/Yukie-Billal">Di Sarankan Berkunjung Ke Github</a>
+	<br>
+	<button style="padding: 4px 10px; background: skyblue; border: none; outline: none;">Tekan Tombol</button>
 
-	<button class="button button-primary"></button>
+	<!-- <canvas id="myCanvas"></canvas> -->
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script scr="assets/js/app.js"></script>
 	<script type="text/javascript">
-		const beli = ""
+		const button = document.querySelector(".button.button-primary");
+		button.addEventListener("click", function () {
+			Swal.fire({
+				icon: "question",
+				title: "Welcome",
+				showConfirmButton: true,
+				timer: 2000
+			});
+		});
 	</script>
 </body>
 </html>
