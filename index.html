@@ -3,20 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Documentasi -- PKL [Sementara Aja]</title>	
+	<title>Documentasi -- PKL [Sementara Aja]</title>
+	<link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-	<p class="header-m">Disini Tempatnya Berbagi Cerita [Kayanya] Tentang Siapa ?</p>	
-	<a href="https://github.com/Yukie-Billal">Di Sarankan Berkunjung Ke Github</a>
-	<br>
-	<button style="padding: 4px 10px; background: skyblue; border: none; outline: none;">Tekan Tombol</button>
+	<div class="container-fluid p-0">
+		<nav class="navbar bg-white navbar-sticky" id="navbar">
+			<a class="navbar-brand" href="#">Yukie M Billal</a>
+			<ul class="nav navbar-nav d-flex flex-row">
+				<li class="nav-item">
+					<a class="nav-link" href="#beranda">Beranda</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Projek</a>
+				</li>
+			</ul>
+		</nav>
+		<section id="#beranda">
+			<p class="header-m">Disini Tempatnya Berbagi Cerita [Kayanya] Tentang Siapa ?</p>	
+			<a href="https://github.com/Yukie-Billal">Di Sarankan Berkunjung Ke Github</a>
+			<br>
+			<button style="padding: 4px 10px; background: skyblue; border: none; outline: none;">Tekan Tombol</button>
+		</section>
+		<section id="#about">
+			<p class="header-m">Yukie M Billal</p>	
+			<a href="https://github.com/Yukie-Billal">Pelajar Sekolah</a>
+			<br>
+		</section>
+	</div>
 
 	<!-- <canvas id="myCanvas"></canvas> -->
 
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script scr="assets/js/app.js"></script>
 	<script type="text/javascript">
-		const button = document.querySelector(".button.button-primary");
+		const button = document.querySelector("button");
 		button.addEventListener("click", function () {
 			Swal.fire({
 				icon: "question",
